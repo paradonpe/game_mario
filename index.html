@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Mario Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">
+    <div class="hud-block"><div class="hud-label">SCORE</div><div class="hud-val" id="h-score">000000</div></div>
+    <div class="hud-block"><div class="hud-label">COINS</div><div class="hud-val" id="h-coins">x00</div></div>
+    <div class="hud-block"><div class="hud-label">WORLD</div><div class="hud-val" id="h-world">1-1</div></div>
+    <div class="hud-block"><div class="hud-label">TIME</div><div class="hud-val" id="h-time">300</div></div>
+    <div class="hud-block"><div class="hud-label">LIVES</div><div class="hud-val" id="h-lives">x3</div></div>
+    <div class="hud-block"><div class="hud-label">POWER</div><div class="hud-val" id="h-power">SMALL</div></div>
+  </div>
+  <div style="position: relative;">
+    <canvas id="canvas" width="800" height="450"></canvas>
+    <div id="overlay">
+      <div id="msg-box">
+        <h1 id="msg-title">SUPER ADVENTURE</h1>
+        <p id="msg-sub">Collect coins, stomp enemies, reach the flag!</p>
+        <div class="start-hint" id="msg-hint">PRESS ENTER OR SPACE TO START</div>
+      </div>
+    </div>
+    <div id="controls-hint">ARROWS / WASD = MOVE &nbsp;|&nbsp; SPACE / UP / W = JUMP &nbsp;|&nbsp; SHIFT = RUN &nbsp;|&nbsp; ENTER = START</div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

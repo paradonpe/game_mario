@@ -1,0 +1,99 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+}
+
+#hud {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hud-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.hud-label {
+  font-size: 10px;
+  color: #aaa;
+  letter-spacing: 2px;
+}
+
+.hud-val {
+  font-size: 16px;
+  color: #fff;
+}
+
+#canvas {
+  display: block;
+  border: 3px solid #333;
+  image-rendering: pixelated;
+}
+
+#overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  pointer-events: none;
+}
+
+#msg-box {
+  background: rgba(0, 0, 0, 0.85);
+  border: 4px solid #fff;
+  padding: 24px 40px;
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+
+#msg-box h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+#msg-box p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+#msg-box .start-hint {
+  font-size: 13px;
+  color: #ff0;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+#controls-hint {
+  position: absolute;
+  bottom: 8px;
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 1px;
+}
