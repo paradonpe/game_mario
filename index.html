@@ -26,6 +26,12 @@
     </div>
     <div id="controls-hint">ARROWS / WASD = MOVE &nbsp;|&nbsp; SPACE / UP / W = JUMP &nbsp;|&nbsp; SHIFT = RUN &nbsp;|&nbsp; ENTER = START</div>
   </div>
-  <script src="game.js"></script>
+  <!-- Load order matters: constants → data → physics → boss logic → drawing → main loop -->
+  <script src="constants.js"></script>
+  <script src="levels.js"></script>
+  <script src="physics.js"></script>
+  <script src="boss.js"></script>
+  <script src="draw.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
